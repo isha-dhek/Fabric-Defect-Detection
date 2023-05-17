@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fabric-Defect-Detection</title>
+    <style>
+      body {
+        background-color: black;
+      }
+
+      h1 {
+        font-size: 80px;
+        /* font-family: 'Permanent-Marker', cursive; */
+        font-family: 'Permanent-Marker', cursive;
+        /* font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif; */
+        text-align: center;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        color: #89fcf3;
+      }
+
+      a {
+        height: 55px;
+        width: 150px;
+        margin-right: 58px;
+        margin-bottom: 20px;
+        margin-top: 60px;
+      }
+
+      #camera {
+        margin-left: 195px;
+      }
+
+      a {
+        align-items: center;
+      }
+
+      button {
+        font-size: 19px;
+        color: #89fcf3;
+        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+          
+        border-radius: 35px;
+        background-color: aliceblue;
+        border-color: #89fcf3;
+
+        background: black;
+      }
+
+      button:hover {
+        background-color: rgb(236, 190, 190);
+      }
+
+      .link {
+        padding: 15px 30px;
+        color: #89fcf3;
+        /* background: linear-gradient(90deg, #4e07b0, #55e7f6); */
+        background-color: black;
+        text-decoration: none;
+      }
+
+      .link:hover {
+        text-decoration: none;
+        background: #89fcf3;
+        color: rgb(12, 11, 11);
+      }
+
+      /*==================*/
+      /* POP
+/*==================*/
+
+      @-webkit-keyframes pop-on-hover {
+        50% {
+          -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+        }
+      }
+      @keyframes pop-on-hover {
+        50% {
+          -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+        }
+      }
+      .pop-on-hover {
+        display: inline-block;
+        vertical-align: middle;
+        -webkit-transform: perspective(1px) translateZ(0);
+        transform: perspective(1px) translateZ(0);
+        box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+      }
+      .pop-on-hover:hover,
+      .pop-on-hover:focus,
+      .pop-on-hover:active {
+        -webkit-animation-name: pop-on-hover;
+        animation-name: pop-on-hover;
+        -webkit-animation-duration: 0.3s;
+        animation-duration: 0.3s;
+        -webkit-animation-timing-function: linear;
+        animation-timing-function: linear;
+        -webkit-animation-iteration-count: 1;
+        animation-iteration-count: 1;
+      }
+
+      p{
+        font-size: 27px;
+        font-weight:bold;
+        text-align: center;
+        color: #89fcf3;
+        padding-left: 270px;
+        padding-right: 270px;
+        padding-bottom: 70px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- <h1>DISPLAY CAMERA STREAM</h1> -->
+    <h1>Fabric-Defect-Detection</h1>
+    <p>Use any of these mentioned mediums to drop input, and detect stains in fabric</p>
+    <a href="displaycamera"><button id="camera" class="link pop-on-hover">CAMERA</button></a>
+    <a href="displayimage"><button class="link pop-on-hover">IMAGE</button></a>
+    <a href="rtsp"><button class="link pop-on-hover">RTSP</button></a>
+    <a href="displaypdf"><button class="link pop-on-hover">PDF</button></a>
+    <a href="displayvideo"><button class="link pop-on-hover">VIDEO</button></a>
+  </body>
+</html>
